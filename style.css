@@ -1,0 +1,76 @@
+/* comentario. Abro y cierro llaves para dar estilos. Termino con punto y coma cada linea */
+/*Diferente categorias de selectores. 
+General*/
+*{
+    box-sizing: border-box; /*El tamaño de la caja sea respetado y no crezca*/
+}
+
+body
+{
+    font-family: 'Roboto', sans-serif;
+}
+a
+{
+    display: inline-block;
+}
+/*Selector por etiqueta*/
+p
+{
+    color: black;
+
+}
+
+header
+{
+    /*background-color: black;*/
+    padding: 15px 0;
+
+}
+
+
+header .container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container .logo
+{
+    width: 100px;
+}
+
+header .container a
+{
+    color: red;
+    text-decoration: none;
+    margin: 0 15px;
+}
+/*Por clase, categoria*/
+.container 
+{
+    width: 1140px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-left: 15px;
+
+}
+
+/*Por id*/
+#inicio
+{
+    position: relative;
+
+}
+
+#inicio img
+{
+    width: 100%;
+    display: block;
+}
+
+#inicio .bloque-inicio
+{
+    position: absolute;
+    top: 50%;
+}
