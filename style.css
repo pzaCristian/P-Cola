@@ -81,11 +81,19 @@ header .container nav a
 .container 
 {
     width: 1140px;
-    margin: 0 auto;
-    padding-left: 15px;
+    margin: 0 auto 0 auto;
+    padding-right: 15px;
     padding-left: 15px;
 
 }
+
+.container-fluid
+{
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 .row
 {
     display:flex;
@@ -191,17 +199,18 @@ header .container nav a
 
 }
 
+
+#servicios .bloque-servicio .bloque-img-servicio img
+{
+    width: 100%;
+}
+
 #servicios .bloque-servicio .bloque-img-servicio.cuadrado-perfecto
 {
     padding-bottom: 56.25%;
 
 }
 
-#servicios .bloque-servicio .bloque-img-servicio img
-{
-    width: 100%;
-
-}
 
 #servicios .bloque-servicio .bloque-contenido-servicio
 {
@@ -211,4 +220,32 @@ header .container nav a
 {
     margin-top: 0;
     font-size:25px;
+}
+
+#galeria h4
+{
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center;
+    position: absolute;
+    top:40%;
+    color: white;
+    font-size: 18px;
+    width: 100%;
+
+}
+
+#galeria img
+{
+    filter: grayscale(1);
+}
+
+#galeria .cuadrado-perfecto:hover img
+{
+    filter: grayscale(0);
+}
+
+#galeria .cuadrado-perfecto:hover h4
+{
+    display: none;
 }
