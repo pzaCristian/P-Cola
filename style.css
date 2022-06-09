@@ -13,6 +13,7 @@ body
 a
 {
     display: inline-block;
+    text-decoration: none;
 }
 /*Selector por etiqueta*/
 p
@@ -52,6 +53,69 @@ header .container nav a
     color: red;
     text-decoration: none;
     margin: 0 15px;
+}
+
+header .container .hamb
+{
+    display: none;
+}
+
+footer
+{
+    background-color: black;
+    color: white;
+    padding-top: 60px;
+
+}
+
+footer .barra-footer
+{
+    background-color:grey;
+    text-align: center;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer .logo-footer 
+{
+    width: 100%;
+}
+
+footer p
+{
+    color:white;
+    margin-bottom: 30px;
+}
+
+footer a
+{
+    color:white;
+}
+
+footer .redes
+{
+    font-size: 20px;
+    display: flex;
+}
+
+footer .redes a
+{
+    margin: 0 7.5px;
+}
+
+footer ul 
+{
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+
+}
+
+footer ul li
+{
+    margin-bottom: 10px;
 }
 
 .seccion
@@ -108,6 +172,11 @@ header .container nav a
 {
     padding-right: 15px;
     padding-left: 15px;
+}
+
+.columna-25
+{
+    width: 25%;
 }
 
 .columna-33
@@ -355,3 +424,4 @@ nos referimos a que seleccionamos un elemento que tiene ambas clases*/
     margin-bottom: 0;
 
 }
+
