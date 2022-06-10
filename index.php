@@ -170,12 +170,12 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="columna columna-41 columna-mobile-100 empujar-58 empujar-mobile-0 sinpadding-mobile">
-                            <form action="" method="post">
+                            <form action="index.php" method="post">
                                 <div class="form-block">
                                     <input type="text" name="nombre" class="form-control" placeholder="Nombre">
                                 </div>
                                 <div class="form-block">
-                                    <input type="email" name"email" class="form-control" placeholder="Email">
+                                    <input type="email" name="email" class="form-control" placeholder="Email">
                                 </div>
                                 <div class="form-block">
                                     <textarea name="mensaje" placeholder="Mensaje"></textarea>
@@ -183,6 +183,35 @@
                                 <div class="form-block bloque-ultimo" >
                                     <input type="submit" class="boton boton-negro" value="Enviar">
                                 </div>
+                                <?php
+                                    if ($_SERVER["REQUEST_METHOD"]== "POST")
+                                    {
+                                        $nombre = $_POST["nombre"];
+                                        $email = $_POST["email"];
+                                        $mensaje= $_POST["mensaje"];
+                                        //Verificamos si las variables tienen contenido//
+                                        if (isset ($nombre))
+                                        {
+                                            if (isset($email))
+                                            {
+                                                if(isset($mensaje))
+                                                {
+                                                    $para = "nuevocorreo17@gmail.com";
+                                                    $asunto ="Esto es una prueba";
+                                                    $cuerpo = $nombre."\n".$email."\n".$mensaje;
+                                                    $adicional ="From: noreply@jacoboamaru.com";
+
+                                                    mail($para,$asunto,$cuerpo,$adicional);
+                                                    ?>
+                                                    <p>Envio exitoso</p>
+                                                    <?php
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                ?>
+
 
                             </form>
                         </div>
